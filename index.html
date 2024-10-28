@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+<head>
+<body>
+    <div class="container">
+        <h1>Ponto Eletrônico</h1>
+        
+        <div class="time" id="datetime">Carregando data e hora...</div>
+
+        <input type="text" id="nota" class="note-input" placeholder="Adicione uma nota (opcional)" />
+
+        <button class="button" onclick="marcarPonto('entrada')">Marcar Entrada</button>
+        <button class="button" onclick="marcarPonto('saida')">Marcar Saída</button>
+
+        <div class="status" id="status">Pronto para marcar o ponto.</div>
+
+        <div class="history">
+            <h3>Histórico de Pontos</h3>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
